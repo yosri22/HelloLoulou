@@ -1,0 +1,13 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: hello-loulou
+spec:
+  selector:
+    app: hello-loulou
+
+  ports:
+    - port: 8080
+      targetPort: 8080
+
+  type: NodePort
